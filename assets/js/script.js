@@ -14,4 +14,19 @@ $("a").click(function () {
     }, 1200
     );
 });
+    
+    $(window).scroll(function () {
+        let navegador = $(".navbar");
+        if ($(this).scrollTop() > 100) {
+          navegador.css("background", "#0DCAF0");
+        } else {
+          navegador.css("background", "none");
+        }
+      });
+
+    
+    
+    
+    
+    
 });
